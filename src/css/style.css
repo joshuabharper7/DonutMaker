@@ -79,11 +79,20 @@
     -webkit-text-stroke-width: 1px;
     -webkit-text-stroke-color: rgb(0, 0, 0);
   }
+/* 
+  html {
+    background: url(src/images/DonutBorder.png) no-repeat center center fixed; 
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    
+  } */
 
-  body{
-    padding-top: 30px;
+    .body{
+    /* padding-top: 30px; */
     font-family: Arial;
-    width: 690px;
+    width: 609px;
     margin: auto;
     text-align: center;
     text-decoration: none;
@@ -96,6 +105,7 @@
     -webkit-text-stroke-width: 2px;
     -webkit-text-stroke-color: black;
     background-color: rgba(0, 0, 0, 0.315);
+    margin-top: 40px;
     width: 500px;
     font-size: 40px;
     border-radius: 5px;
@@ -145,6 +155,14 @@
     cursor:pointer;
   }
 
+  .donutButton:disabled, .buyAutoButton:disabled, .buyclickMultiplier:disabled, .resetButton:disabled {
+    background: rgba(196, 192, 192, 0.966);
+    color: rgba(255, 255, 255, 0.61);
+    margin: auto;
+    border-radius: 5px;
+    cursor: unset;
+  }
+
   footer {
     margin: auto;
     padding-top: 15px;
@@ -157,13 +175,13 @@
     background: radial-gradient(rgb(0 0 0 / 87%), rgba(248, 29, 29, 0.678),  transparent);*/
     /*background: linear-gradient(rgb(255 0 0 / 87%), rgb(255 165 0 / 87%), rgb(0 128 0 / 87%), rgb(0 0 255 / 87%), rgb(128 0 128 / 87%), transparent);*/
     color: rgb(0, 0, 0);
-    width: 80px;
+    width: 200px;
     text-align: center;
     padding-left: 10px; 
   }
   .background{
-    background-size: 60%;
-
+    background-size: 100%;
+    height: 975px;
   }
 
    .container{
@@ -177,7 +195,7 @@
   }
 
 #donutsMade, #autoClicker, #priceForAuto, #clickMultiplier, #priceForMultiplier{
-  padding-right: 8px;
+  padding-right: 18px;
   padding-left: 8px;
 }
 

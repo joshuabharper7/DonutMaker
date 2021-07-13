@@ -9,67 +9,81 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
   </head>
   <body class="background" background="src/images/DonutBorder.png">
+    
     <h1> Delicious Donut Depot </h1>
     
-    <div id="mySidebar" class="sidebar">
-        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
-        <a href="/index.html">Home</a>
-        <a href="/About.html">About</a>
-        <a href="/Inspiration.html">Inspiration</a>
-        <a href="/Creator.html">Creator</a>
-      </div>
-      <div id="main">
-        <button class="openbtn" onclick="openNav()">&#9776; </button>
-      </div>
-      <h2>Welcome to the donut shop!</h2>
-      <p><br /> Today we are going to be making donuts, and lots of them! </p> 
-      <p>To make donuts, click the Bake button below. (One donut per click to start)</p>
-      <p>As you make donuts, you can use them as currency to buy advantages.</p>
-      <p>Be mindful, your donuts will begin to spoil if you keep too many for too long. </p>
-      <p>There are two advantages that can be purchased.</p>
-      <ol>
-        <li>The Donut Auto Clicker</li>
-        <ul>
+      <div id="mySidebar" class="sidebar">
+          <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+          <a href="/index.html">Home</a>
+          <a href="/About.html">About</a>
+          <a href="/Inspiration.html">Inspiration</a>
+          <a href="/Creator.html">Creator</a>
+        </div>
+        <div id="main">
           <br />
-          <li>This automatically clicks the Donut button once per second to help gain extra donuts.</li>
           <br />
-        </ul>
-        <li>The Donut Multiplier</li>
-        <ul>
-          <br />
-          <li>This increases the number of donuts recieved per click of the donut button.</li>
-        </ul>
-      </ol>
+          <button class="openbtn" onclick="openNav()">&#9776; </button>
+        </div>
 
-
-      <div class="container" >
-        <section>
-          <p  id="donutsMade" name="donutsMade">Donuts: 0.00</p>
-          <button class="fas fa-dot-circle donutButton"> Bake!</button>
-        </section>
-  
-        <section>
-          <p id="autoClicker" name="autoClicker" >Donut Auto Clickers Owned: 0</p>
-          <button class="buyAutoButton">Buy Auto Clicker</button>
-          <p id="priceForAuto" name="priceForAuto">Price: 100</p>
-        </section>
-  
-        <section>
-          <p id="clickMultiplier" name="clickMultiplier" >Donuts Per Click: 1</p>
-          <button class="buyclickMultiplier">Buy Donut Multiplier</button>
-          <p id="priceForMultiplier" name="priceForMultiplier">Price: 100</p>
-        </section>
-        <br />
-      </div>
+    <div class="body">
       
-      <button class="resetButton">Reset Game</button>
+        <h2>Welcome to the donut shop!</h2>
+        <p><br /> Today we are going to be making donuts, and lots of them! </p> 
+        <p>To make donuts, click the Bake button below. (One donut per click to start)</p>
+        <p>As you make donuts, you can use them as currency to buy advantages.</p>
+        <p>Be mindful, your donuts will begin to spoil if you keep too many for too long. </p>
+        <p>There are two advantages that can be purchased.</p>
+        <ol>
+          <li>The Donut Auto Clicker</li>
+          <ul>
+            <br />
+            <li>This automatically clicks the Donut button once per second to help gain extra donuts.</li>
+            <br />
+          </ul>
+          <li>The Donut Multiplier</li>
+          <ul>
+            <br />
+            <li>This increases the number of donuts recieved per click of the donut button.</li>
+          </ul>
+        </ol>
+  
+  
+        <div class="container" >
+          <section>
+            <p  id="donutsMade" name="donutsMade">Donuts: 0.00</p>
+            <button class="fas fa-dot-circle donutButton"> Bake!</button>
+          </section>
+    
+          <section>
+            <p id="autoClicker" name="autoClicker" >Donut Auto Clickers Owned: 0</p>
+            <button class="buyAutoButton">Buy Auto Clicker</button>
+            <p id="priceForAuto" name="priceForAuto">Price: 100 donuts</p>
+          </section>
+    
+          <section>
+            <p id="clickMultiplier" name="clickMultiplier" >Donuts Per Click: 1</p>
+            <button class="buyclickMultiplier">Buy Donut Multiplier</button>
+            <p id="priceForMultiplier" name="priceForMultiplier">Price: 100 donuts</p>
+          </section>
+          <br />
+        </div>
+        
+        <button class="resetButton">Reset Game</button>
+        <Footer>
+          <br />
+          <br />
+          <br />
+          <br />
+          <br />
+          &copy; Delicious Donut Depot 2021
+        </Footer>
+      
+      <script src="/src/js/DonutShop.js"></script>
+      <script src="/src/js/app.js"></script>
+      <script src="/src/js/nav.js"></script>
+    </div>
     
     
-    <script src="/src/js/DonutShop.js"></script>
-    <script src="/src/js/app.js"></script>
   </body>
-<Footer>
-  <br />
-  &copy; Fred the Baker Baking Company 2021
-</Footer>
+
 </html>

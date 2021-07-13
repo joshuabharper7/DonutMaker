@@ -8,7 +8,9 @@ class DonutShop{
         this.autoClickerCount = 0;
         this.donutMultiplierCount = 0;
         this.donutsEarned = 1;
+        clearInterval(this.clickerIntervalID);
         this.clickerIntervalID = undefined;
+        clearInterval(this.spoilIntervalID);
         this.spoilIntervalID = undefined;
         this.priceForAuto = 100;
         this.priceForMultiply = 10;

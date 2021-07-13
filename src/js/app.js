@@ -1,14 +1,3 @@
-/* Set the width of the sidebar to 250px and the left margin of the page content to 250px */
-function openNav() {
-    document.getElementById("mySidebar").style.width = "250px";
-    document.getElementById("main").style.marginLeft = "250px";
-  }
-  
-  /* Set the width of the sidebar to 0 and the left margin of the page content to 0 */
-  function closeNav() {
-    document.getElementById("mySidebar").style.width = "0";
-    document.getElementById("main").style.marginLeft = "0";
-  }
 
   const buyDonutBtn = document.getElementsByClassName("donutButton")[0];
 
@@ -41,14 +30,14 @@ function openNav() {
   buyAutoClickBtn.addEventListener("click", function(){
     myDonut.addAutoClicker();
     currentAutoClickers.innerText ="Donut Auto Clickers Owned: " + myDonut.getAutoClickerCount();
-    currentAutoClickersPrice.innerText = "Price: " + myDonut.priceForAuto;
+    currentAutoClickersPrice.innerText = "Price: " + myDonut.priceForAuto + " donuts";
     myDonut.startClickerInterval();
   });
 
   buyDonutMultiplierBtn.addEventListener("click", function(){
     myDonut.addDonutMultiplier();
     currentDonutMultipliers.innerText ="Donuts Per Click: " + myDonut.donutsEarned;
-    currentDonutMultipliersPrice.innerText = "Price: " + myDonut.priceForMultiply;
+    currentDonutMultipliersPrice.innerText = "Price: " + myDonut.priceForMultiply + " donuts";
   });
 
   resetGameBtn.addEventListener("click", function(){
@@ -59,9 +48,9 @@ function openNav() {
   function updateDonutCount(){
     currentDonuts.innerText ="Donuts: " + myDonut.getDonutCount();
     currentAutoClickers.innerText ="Donut Auto Clickers Owned: " + myDonut.getAutoClickerCount();
-    currentAutoClickersPrice.innerText = "Price: " + myDonut.priceForAuto;
+    currentAutoClickersPrice.innerText = "Price: " + myDonut.priceForAuto + " donuts";
     currentDonutMultipliers.innerText ="Donuts Per Click: " + myDonut.donutsEarned;
-    currentDonutMultipliersPrice.innerText = "Price: " + myDonut.priceForMultiply;
+    currentDonutMultipliersPrice.innerText = "Price: " + myDonut.priceForMultiply + " donuts";
     checkAutoClickerBtn();
     checkMultiplierClickerBtn();
   }
