@@ -1,11 +1,11 @@
 
   const buyDonutBtn = document.getElementsByClassName("donutButton")[0];
 
-  const buyAutoClickBtn = document.getElementsByClassName("buyAutoButton")[0]
+  const buyAutoClickBtn = document.getElementsByClassName("buyAutoButton")[0];
 
-  const buyDonutMultiplierBtn = document.getElementsByClassName("buyclickMultiplier")[0]
+  const buyDonutMultiplierBtn = document.getElementsByClassName("buyclickMultiplier")[0];
 
-  const resetGameBtn = document.getElementsByClassName("resetButton")[0]
+  const resetGameBtn = document.getElementsByClassName("resetButton")[0];
 
   const currentDonuts = document.getElementById("donutsMade");
 
