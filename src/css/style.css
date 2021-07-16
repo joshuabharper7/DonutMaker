@@ -47,6 +47,7 @@
     color: white;
     padding: 10px 15px;
     border: none;
+    position: fixed;
   }
   
   .openbtn:hover {
@@ -165,7 +166,6 @@
 
   footer {
     margin: auto;
-    padding-top: 15px;
     text-align: center;
     color: rgb(0, 0, 0);
   }
